@@ -1,21 +1,42 @@
+/* Javier Arias Carroza */
 #tituloform {
     width: 25%;
     display: inline-block;
 }
 
-.financiacion {
-    border: 2px solid #009f8e;
-    width: 50%;
+#infoContacta {
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
+    border: 2px solid #2681ba;
+    border-radius: 5px;
     margin-top: 20px;
-    margin-right: 4%;
-    float: right;
+}
+
+#infoContacta > p {
+    margin: 2%;
+    margin-bottom: 3%;
+}
+
+#infoContacta > ol {
+    margin: 2%;
+}
+
+#infoContacta > ol > li {
+    margin: 2%;
+}
+
+.financiacion { 
+    border: 2px solid #2681ba;
+    width: 96%;
+    max-height: 80%;
+    padding: 20px;
+    margin: 0 auto;
 }
 
 .financiacion:hover {
     transform: scale(1.02);
     transition: 0.2s;
-    box-shadow: 0px 0px 10px #5dccc1;
+    box-shadow: 0px 0px 10px #2e9add;
 }
 
 .pais {
@@ -34,7 +55,7 @@
 
 .porcentaje {
     height: 100%;
-    background-color: #53b38b;
+    background-color: #1d6693;
 }
 
 #asia {
@@ -50,12 +71,13 @@
 }
 
 form {
+    font-family: Poppins;
     padding: 20px;
-    border: 2px solid #009f8e;
+    border: 2px solid #2681ba;
     border-radius: 5px;
     background-color: #f9f9f9;
     width: 60%;
-    margin: 15% 0% 15% 18%;
+    margin: 3% 0% 3% 18%;
 }
 
 form input[type="text"], form input[type="email"], form textarea {
@@ -68,7 +90,7 @@ form input[type="text"], form input[type="email"], form textarea {
 }
 
 form input[type="text"]:hover, form input[type="date"]:hover {
-    background-color: #0ec5b3;
+    background-color: #34a7ee;
     transition: 0.5s;
 }
 
@@ -94,7 +116,8 @@ form input[type="checkbox"] {
 }
 
 form input[type="submit"] {
-    background-color: #009f8e;
+    font-family: Poppins;
+    background-color: #2681ba;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -103,10 +126,14 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #007f6e;
+    background-color: #1d6693;
+    /* box-shadow: 0px 0px 10px #2e9add; */
+    transform: scale(1.02);
+    transition: 0.2s;
 }
 
 form input[type="reset"] {
+    font-family: Poppins;
     background-color: #999999;
     color: white;
     padding: 10px 20px;
@@ -117,4 +144,7 @@ form input[type="reset"] {
 
 form input[type="reset"]:hover {
     background-color: #868686;
+    /* box-shadow: 0px 0px 10px #7d7d7d; */
+    transform: scale(1.02);
+    transition: 0.2s;
 }

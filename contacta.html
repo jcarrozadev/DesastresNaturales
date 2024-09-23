@@ -1,3 +1,4 @@
+<!-- Javier Arias Carroza -->
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -18,49 +19,60 @@
                 <ul>
                     <li>
                         <a href="index.html">
-                            <img src="img/logo.png" alt="Logo">
-                        </a>
-                    </li>
-                    <li class="separador"></li>
-                    <li>
-                        <a href="#haiti" class="active">
-                            Desastres
+                            <img src="../img/logo.svg" alt="Logo">
                         </a>
                     </li>
                     <li>
-                        <a href="contacta.html">
-                            Contacta con Nosotros
+                        <a href="contacta.html" class="derecha">
+                            Contacta con Nosotros 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html" class="derecha">
+                            Lista Desastres 
                         </a>
                     </li>
                 </ul>
             </nav>
         </header>
         <main>
-            <h1 id="tituloform">Contacta con Nosotros</h1>
-            <div class="financiacion">
-                <h1>Financiación por región</h1>
-                <div class="pais">
-                    <span>Asia</span>
-                    <div class="barra">
-                        <div class="porcentaje" id="asia"></div>
+            <div id="infoContacta">
+                <h1 id="tituloform">Contacta con Nosotros</h1>
+                <p>
+                    La forma de contactar es rellenando este formulario, ayudando y apoyando a la causa de los Desastres Naturales.
+                </p>
+                <ol>
+                    <h2>Requisitos para participar:</h2>
+                    <li>Conocer los hechos.</li>
+                    <li>Estar informado de noticia/desastre a apoyar.</li>
+                    <li>Compromiso de tiempo y recursos.</li>
+                </ol>
+                <div class="financiacion">
+                    <h1>Financiación por región</h1>
+                    <div class="pais">
+                        <span>Asia</span>
+                        <div class="barra">
+                            <div class="porcentaje" id="asia"></div>
+                        </div>
+                        <span>30%</span>
                     </div>
-                    <span>30%</span>
-                </div>
-                <div class="pais">
-                    <span>Europa</span>
-                    <div class="barra">
-                        <div class="porcentaje" id="europa"></div>
+                    <div class="pais">
+                        <span>Europa</span>
+                        <div class="barra">
+                            <div class="porcentaje" id="europa"></div>
+                        </div>
+                        <span>70%</span>
                     </div>
-                    <span>70%</span>
-                </div>
-                <div class="pais">
-                    <span>USA</span>
-                    <div class="barra">
-                        <div class="porcentaje" id="usa"></div>
+                    <div class="pais">
+                        <span>USA</span>
+                        <div class="barra">
+                            <div class="porcentaje" id="usa"></div>
+                        </div>
+                        <span>50%</span>
                     </div>
-                    <span>50%</span>
                 </div>
             </div>
+            
             <form action="" method="post">
                 <div>
                     <label for="nombre">Nombre:</label>
@@ -87,6 +99,10 @@
                     <select id="tipo_desastre" name="tipo_desastre" required>
                         <option value="calor_extremo">Calor Extremo</option>
                         <option value="tormentas">Tormentas</option>
+                        <option value="terremotos">Terremotos</option>
+                        <option value="incendios">Incendios</option>
+                        <option value="sequias">Sequías</option>
+                        <option value="inundaciones">Inundaciones</option>
                         <option value="lluvias">Lluvias</option>
                     </select>
                 </div>
@@ -103,8 +119,8 @@
                     <label for="financiacion">Soy consciente de la financiación</label>
                 </div>
                 <div>
-                    <input type="submit"></i>
-                    <input type="reset"></i>
+                    <input type="submit" value="Enviar"></i>
+                    <input type="reset" value="Reestablecer"></i>
                 </div>
             </form>
             <footer>
